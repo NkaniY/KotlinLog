@@ -3,8 +3,10 @@ package com.example.kotlinlog
 import android.util.Log
 
 open class Human :Animal{
+    var hobby: String
+
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int, hobby: String){
+    constructor(name: String, age: Int, hobby: String): super(name, age){
         this.name = name
         this.age = age
         this.hobby = hobby

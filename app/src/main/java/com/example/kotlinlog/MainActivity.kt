@@ -2,7 +2,6 @@ package com.example.kotlinlog
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,9 +9,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val human = Human("中野湧希", 24, "テニス")      // 名前を中野湧希、年齢24歳、趣味テニスで、Humanのインスタンスを作る
+        val human1 = Human("太郎", 24, "テニス")      // Humanのインスタンス生成
+        val human2 = Human("花子", 23, "読書")
 
-        human.say()
-        human.think()
+        human1.say()
+        human1.think()
+        human2.say()
+        human2.think()
     }
 }
